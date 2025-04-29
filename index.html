@@ -1,49 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art Street</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MediBang - Art Street</title>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="img-h">
-        <div class="toggle">≡</div>
-        <div class="app-details">
-            <div class="head">ART STREET</div>
-            <div class="tagline">where artists find purpose</div>
-        </div>
-    </div>
 
-    <nav class="nav">
-        <a href="#">Home</a>
-        <a href="#">Explore</a>
-        <a href="#">Artists</a>
-        <a href="#">Contact</a>
+  <header class="navbar">
+    <div class="logo">MediBang</div>
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+    <label for="menu-toggle" class="toggle">&#9776;</label>
+    <nav class="side-nav">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
     </nav>
+  </header>
 
-    <div class="container-1">
-        <div class="box">
-            <h1>FEATURED</h1>
-        </div>
-        <div class="box">
-            <h1>SHOWCASE</h1>
-        </div>
-        <div class="box">
-            <h1>EVENTS</h1>
-        </div>
+  <main class="container">
+    <h1 class="section-title">Art Street</h1>
+    <div class="content">
+      <div class="text-section">
+        <p>
+          Art Street is MediBang’s online art community where users can post and share artwork,
+          enter contests, and connect with other artists. It's a great place for illustrators and comic creators.
+        </p>
+        <a class="download" href="https://play.google.com/store/apps/details?id=com.medibang.android.paint.tablet&pcampaignid=web_share" target="_blank">Download</a>
+      </div>
+      <div class="image-section">
+        <img src="https://cdn.discordapp.com/attachments/1130072034139385997/1228063248479342652/IMG_20240413_192028.jpg?ex=662acaa6&is=661855a6&hm=0f964cab79107a8f5f2db47358a1e00d9a2e4a4975aebfdba2cf8d3c93371eac&" alt="Art Street sample image">
+      </div>
     </div>
+  </main>
 
-    <div class="container">
-        <div style="background-color: lightcoral;"></div>
-        <div style="background-color: lightseagreen;"></div>
-        <div style="background-color: lightblue;"></div>
-    </div>
-
-    <h1 class="artists">Art Street</h1>
-
-    <div class="footer">
-        <p>&copy; 2025 Art Street. All rights reserved.</p>
-    </div>
 </body>
 </html>
