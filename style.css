@@ -1,239 +1,176 @@
-/* Reset & Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Urbanist', sans-serif;
-}
-
 body {
-    background-color: #090E12;
-    color: #fff;
-    line-height: 1.6;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header {
+.img-h {
+    background-image: url('your-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
     position: relative;
-    text-align: center;
 }
 
-.hero-img {
-    width: 100%;
-    height: 60vh;
-    object-fit: cover;
-    opacity: 0.7;
-}
-
-.overlay-text {
+.toggle {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 40px;
+    left: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
 }
 
-.site-title {
-    font-size: 3rem;
-    font-weight: 700;
+.app-details {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 60%;
+    color: white;
+}
+
+.head {
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 8px;
 }
 
 .tagline {
-    font-size: 1rem;
-    letter-spacing: 5px;
-    margin-top: 10px;
+    font-size: 14px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
 }
 
 .nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #070a0c;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-.nav .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 1rem;
-}
-
-.nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.nav-links li a:hover {
-    color: #21d3fb;
-}
-
-#menu-toggle {
-    display: none;
-}
-
-.hamburger {
-    display: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-/* Tutorials Section */
-.tutorials {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
-    padding: 2rem;
-    gap: 2rem;
+    background-color: black;
+    padding: 15px 0;
+    gap: 30px;
 }
 
-.app-img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-.app-details .download {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background-color: #118244;
-    border-radius: 10px;
-    text-decoration: none;
+nav a {
     color: white;
-    transition: background 0.3s;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
 }
 
-.app-details .download:hover {
-    background-color: #0d6c38;
+.container-1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: #f0f0f0;
 }
 
-/* Card Section */
-.art-street {
-    padding: 2rem;
-    text-align: center;
-}
-
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 1rem;
-}
-
-.card {
-    background-color: #070a0c;
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-    padding: 1rem;
-    transition: transform 0.3s;
-}
-
-.card img {
-    width: 100%;
+.box {
+    width: 300px;
     height: 200px;
-    object-fit: cover;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.card button {
-    margin-top: 0.5rem;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #f97d30;
+    background-color: #222;
     color: white;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.card button:hover {
-    background-color: #d86025;
-}
-
-/* Artists Section */
-.artists-section {
-    padding: 2rem;
-    text-align: center;
-}
-
-.artist-cards {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    gap: 1rem;
 }
 
-.artist-card {
-    width: 200px;
-    background-color: #070a0c;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+.container {
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+    margin: 50px 0;
 }
 
-/* Footer */
-.footer {
-    background-color: #070a0c;
-    padding: 2rem;
+.container > div {
+    flex: 1;
+    margin: 10px;
+    border-radius: 12px;
+}
+
+.artists {
     text-align: center;
+    font-size: 36px;
+    margin: 40px 0;
 }
 
-.footer-links,
-.social-media {
-    margin-bottom: 1rem;
-}
-
-.footer-links a,
-.social-media a {
-    margin: 0 10px;
-    text-decoration: none;
+.footer {
+    background-color: black;
     color: white;
-    transition: color 0.3s;
+    text-align: center;
+    padding: 20px 0;
 }
 
-.footer-links a:hover,
-.social-media a:hover {
-    color: #f97d30;
-}
-
-.footer p {
-    font-size: 0.9rem;
-    color: #bbb;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #070a0c;
-        display: none;
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 1024px) {
+    .container-1, .container {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    #menu-toggle:checked ~ .nav-links {
-        display: flex;
+    .box {
+        width: 80%;
+        margin: 20px auto;
     }
 
-    .hamburger {
-        display: block;
-    }
-
-    .tutorials {
-        flex-direction: column;
+    .app-details {
+        width: 90%;
         text-align: center;
+    }
+
+    .toggle {
+        top: 80px;
+        left: 20px;
+    }
+
+    .head {
+        font-size: 60px;
+        top: 75%;
+    }
+
+    .tagline {
+        font-size: 12px;
+        top: 85%;
+        letter-spacing: 6px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    nav a {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .head {
+        font-size: 40px;
+        top: 70%;
+    }
+
+    .tagline {
+        font-size: 10px;
+        letter-spacing: 4px;
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container > div {
+        flex: 1 1 100%;
+        height: 250px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-h {
+        height: 400px;
     }
 }
